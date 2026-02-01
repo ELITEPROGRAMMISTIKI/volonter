@@ -1,0 +1,381 @@
+.main {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero секция */
+.hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #2980b9 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+/* Миссия секция */
+.mission {
+  padding: 6rem 0;
+  background: var(--bg-white);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.missionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.missionText h3 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.missionText p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+}
+
+.missionValues h3 {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.valueCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-light-gray);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: var(--bg-white);
+}
+
+.valueIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.valueCard h4 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.valueCard p {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+/* Принципы секция */
+.principles {
+  padding: 6rem 0;
+  background: var(--bg-light-gray);
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.principleCard {
+  background: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.principleCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.principleIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.principleCard h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.principleCard p {
+  color: var(--text-gray);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Роли секция */
+.roles {
+  padding: 6rem 0;
+  background: var(--bg-white);
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roleCard {
+  background: var(--bg-white);
+  border: 2px solid var(--bg-light-gray);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.roleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-color: var(--primary-blue);
+}
+
+.roleHeader {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #2980b9 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.roleIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.roleHeader h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.roleContent {
+  padding: 2rem;
+}
+
+.roleContent h4 {
+  font-size: 1.1rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.roleContent h4:first-child {
+  margin-top: 0;
+}
+
+.roleContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roleContent li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.roleContent li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* CTA секция */
+.cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--text-dark) 0%, #34495e 100%);
+  color: white;
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: var(--primary-blue);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnPrimary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.3s ease;
+}
+
+.btnPrimary:hover::before {
+  left: 100%;
+}
+
+.btnPrimary:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.btnSecondary {
+  background: var(--primary-green);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnSecondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.3s ease;
+}
+
+.btnSecondary:hover::before {
+  left: 100%;
+}
+
+.btnSecondary:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .missionContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .principlesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rolesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaContent h2 {
+    font-size: 2rem;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

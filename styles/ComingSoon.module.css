@@ -1,0 +1,115 @@
+.main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content {
+  background: var(--bg-white);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.features {
+  text-align: left;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--bg-light-gray);
+  border-radius: 12px;
+}
+
+.features h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  color: var(--text-gray);
+  font-size: 1.1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btnPrimary {
+  background: var(--primary-blue);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.btnSecondary {
+  background: var(--primary-green);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btnSecondary:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+}
